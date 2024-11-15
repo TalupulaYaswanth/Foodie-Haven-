@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Booking Webpage</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  body {
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 2em;
+  }
+  header nav ul {
+    list-style-type: none;
+  }
+  header nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  header nav ul li a:hover {
+    text-decoration: underline;
+  }
+  .hero {
+    background-color: #e67e22;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  .menu {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .menu h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .menu-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+  .menu-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  .menu-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  .booking {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .booking h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  .booking form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .booking label {
+    text-align: left;
+  }
+  .booking input, .booking button {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+  }
+  .booking button {
+    background-color: #e67e22;
+    color: #fff;
+    cursor: pointer;
+  }
+  .booking button:hover {
+    background-color: #d35400;
+  }
+  footer {
+    background-color: #222;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+  }
+  footer p, footer .social-media {
+    margin: 10px 0;
+  }
+  footer .social-media a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  footer .social-media a:hover {
+    color: #fff;
+  }
+  
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <h1>Foodie Haven</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="Homee3.html">Foodie Menu</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#booking">Table Booking</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+<section class="hero" id="home">
+  <h2>Welcome to Foodie Haven</h2>
+  <p>Book your favorite dishes and enjoy an amazing culinary experience!</p>
+</section>
+<section class="menu" id="menu">
+  <h2>Popular Dishes</h2>
+  <div class="menu-items">
+    <div class="menu-item">
+      <img src="https://www.sipandfeast.com/wp-content/uploads/2022/09/spaghetti-carbonara-recipe-snippet.jpg" alt="Dish 1">
+      <h3>Spaghetti Carbonara</h3>
+      <p>Delicious pasta with creamy sauce and pancetta.</p>
+      <span>$7.00</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://media.istockphoto.com/id/1214416414/photo/barbecued-salmon-fried-potatoes-and-vegetables-on-wooden-background.jpg?s=612x612&w=0&k=20&c=Y8RYbZFcvec-FXMMuoU-qkprC3TUFNiw3Ysoe8Drn6g=" alt="Dish 2">
+      <h3>Grilled Salmon</h3>
+      <p>Perfectly grilled salmon served with vegetables.</p>
+      <span>$6.00</span>
+    </div>
+    <div class="menu-item">
+      <img src="https://allforpizza.com/wp-content/uploads/2022/07/1460A7EC-CF3B-40E8-B05F-A21E12E85EC6.jpeg" alt="Dish 3">
+      <h3>Margherita Pizza</h3>
+      <p>Classic pizza with fresh tomatoes, mozzarella, and basil.</p>
+      <span>$10.00</span>
+    </div>
+  </div>
+</section>
+<section class="booking" id="booking">
+  <h2>Make a Reservation</h2>
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="time">Time:</label>
+    <input type="time" id="time" name="time" required>
+
+    <label for="guests">Number of Guests:</label>
+    <input type="number" id="guests" name="guests" min="1" max="10" required>
+
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+<footer id="contact">
+  <p>Contact Us: contact@foodiehaven.com | +123 456 7890</p>
+  <div class="social-media">
+    <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a>
+  </div>
+  <p>&copy; 2024 Foodie Haven. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
